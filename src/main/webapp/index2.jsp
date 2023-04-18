@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>H. S. Group Java Training Center</title>
+  <title>HS Group</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,15 +44,17 @@
   <link href="<c:url value="/resources/vendor/remixicon/remixicon.css" />" rel="stylesheet">
    <link href="<c:url value="/resources/vendor/swiper/swiper-bundle.min.css" />" rel="stylesheet">
  
-  
+   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
  <!--  <link href="assets/css/style.css" rel="stylesheet"> -->
-  <%-- <spring:url value="/resources/css/style.css" var="mainCss" />
-    <link href="${mainCss}" rel="stylesheet"> --%>
-    <link href="resourses/assets/css/style.css>" rel="stylesheet" />
+ <%--   <spring:url value="/assets/css/style.css" var="mainCss" />
+    <link href="${mainCss}" rel="stylesheet">  --%>
+   
+   
+    <!-- <link href="assets/css/style.css>" rel="stylesheet" /> -->
 
-<%-- <link href="${pageContext.request.contextPath}/resourses/css/style.css" rel="stylesheet" > --%>
+<%-- <link href="${pageContext.request.contextPath}/resourses/css/style.css" rel="stylesheet" >  --%>
 
 </head>
 
