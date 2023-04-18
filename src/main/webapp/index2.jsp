@@ -148,6 +148,27 @@
 
     </div>
   </header>
+       <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logo.jpeg" > H. S. Group <span>Java Training Center</span></a></h1>
+     
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="gallary">Gallary</a></li>
+          <li><a class="nav-link scrollto" href="#services">Our Services</a></li>
+          <li><a class="nav-link scrollto" href="courses">Our Courses</a></li>
+          <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header>
   
   
 
