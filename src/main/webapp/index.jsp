@@ -1,265 +1,435 @@
-<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-<!doctype html>
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link href="resources/theme1/css/style.css>" rel="stylesheet" /> -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <title>HS Group</title>
-    
-    
-    
-  </head>
-  <body>
-  
-  
-  
-     <!-- ======= Header ======= -->
-     
-     <div class = "row">
-    		<div class = "col col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    		
-    		<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logo.jpeg" > HS Group <span></span></a></h1>
-     
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="css/scrollreveal.min.js">
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="gallary">Gallary</a></li>
-          <li><a class="nav-link scrollto" href="#services">Our Services</a></li>
-          <li><a class="nav-link scrollto" href="courses">Our Courses</a></li>
-          <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-reception-0"></i>
-        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
-      </nav>
-     
-    </div>
-  </header>
-    		
-    		
-    		</div>
-    </div>
-     
-  
-  <!-- End Header -->
-  
-  
-  <div class = "row">
-    		<div class = "col col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/img/crousel/c1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/crousel/c2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/crousel/c3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    		
-    		
-    		
-    		</div>
-    		</div>
-  
-  
-  
-  
-  
-  
-  
-   <div class = "row">
-    		<div class = "col col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    		 <!-- ======= Tabs Section ======= -->
-        <section id="tabs" class="tabs">
-          <div class="container" data-aos="fade-up">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body>
+        
+<!-- Header -->
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="#" class="logo-content flex">
+                        <i class='bx bx-coffee logo-icon'></i>
+                        <span class="logo-text">Coffee.</span>
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
+                                    <li><a href="#about" class="nav-link">about</a></li>
+                                    <li><a href="#menu" class="nav-link">menu</a></li>
+                                    <li><a href="#review" class="nav-link">review</a></li>
+                            </ul>
+
+                            <div class="media-icons flex">
+                                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                    <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                            </div>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+                        
+                        <div class="contact-content flex">
+                            
+                            <a href="login" class="nav-link">login</a>
+                              &nbsp;&nbsp;
+                            <a href="signup" class="nav-link">Sign up</a>
+                        </div>
+                       
+
+                       
+                </nav>
+        
+    </header>
+
+
+<!-- Home Section -->
+    <main>
+        <section class="home" id="home">
+                <div class="home-content">
+                        <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img src="images/homeImg1.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">We really like what we do.</h4>
+                                                                <h2 class="homeTitle">Coffee Beans with a <br> Perfect Aroma</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                                <img src="images/homeImg2.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Enjoy the finest coffee drinks.</h4>
+                                                                <h2 class="homeTitle">Enjoy Our Exclusive <br> Coffee and Cocktails</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                                <img src="images/homeImg3.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Making Our coffee with lover.</h4>
+                                                                <h2 class="homeTitle">Alluring and Fragrant <br> Coffee Aroma</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+        </section>
+
     
-            <ul class="nav nav-tabs row d-flex">
-              <li class="nav-item col-3">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                  <i class="ri-gps-line"></i>
-                  <h4 class="d-none d-lg-block">Year 2020</h4>
-                </a>
-              </li>
-              <li class="nav-item col-3">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                  <i class="ri-body-scan-line"></i>
-                  <h4 class="d-none d-lg-block">Year 2019</h4>
-                </a>
-              </li>
-              <li class="nav-item col-3">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                  <i class="ri-sun-line"></i>
-                  <h4 class="d-none d-lg-block">Year 2018</h4>
-                </a>
-              </li>
-              <li class="nav-item col-3">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                  <i class="ri-store-line"></i>
-                  <h4 class="d-none d-lg-block">Year 2017</h4>
-                </a>
-              </li>
-            </ul>
+<!-- About Section -->
+        <section class="section about" id="about">
+                <div class="about-content container">
+                        <div class="about-imageContent">
+                                <img src="images/aboutImg.jpg" alt="" class="about-img">
+
+                                <div class="aboutImg-textBox">
+                                        <i class='bx bx-heart heart-icon flex'></i>
+                                        <p class="content-description">I really love the Cappucino. The coffee war very smooth.</p>
+                                </div>
+                        </div>
+
+                        <div class="about-details">
+                                <div class="about-text">
+                                        <h4 class="content-subtitle"><i>Our coffee Shop</i></h4>
+                                        <h2 class="content-title">We Combine Classics <br> and Modernity</h2>
+                                        <p class="content-description">We appreciate your trust greatly. 
+                                                Our clients choose us and our products because theyknow we are the best.</p>
+
+                                        <ul class="about-lists flex">
+                                                <li class="about-list">Cappucino</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Late</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Arabica</li>
+                                        </ul>
+                                </div>
+
+                                <div class="about-buttons flex">
+                                        <button class="button">About Us</button>
+                                        <a href="#" class="about-link flex">
+                                                <span class="link-text">see more</span>
+                                                <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                                        </a>
+                                </div>
+                        </div>
+
+                </div>
+        </section>
+
     
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Here is small introduction of our Training Center with some year placements</h3>
-                    <p class="fst-italic">
-                    For more placement information please visit in our gallary section.
-                    <a href="gallary.html" style="border-radius: 50px;" class="get-started-btn scrollto">Visit Gallary</a>  
-                  </p>
-                    
-                    <ul>
-                     
-                      <li><i class="ri-check-double-line"></i> We teach student with real life example so that they can solve real life problem.</li>
-                      <li><i class="ri-check-double-line"></i> After every topic we give assignment to student so that they can explore more things in the domain.</li>
-                    </ul>
-                    <strong>
-                      So what are you waiting for, You will be the next in the upcomimg poster having a job of your favourite designation. <br>
-                      So if you want to be there join us and make your future secure and more bright.
-                    </strong>
-                  </div>
-                  <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <video width="100%" height="100%" controls id="vid">
-                      <source src="./assets/WhatsApp Video 2021-05-14 at 11.02.10 PM.mp4" type="video/mp4">
-                                           
-                    </video>
-                  </div> 
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Here is all the placement result of students which they are achieved by their hardwork.</h3>
-                    <p class="fst-italic">
-                    As we know that while studying student needs different environment so that they can focus and study.
-                    </p>
-                    <ul>
-                      <li><i class="ri-check-double-line"></i> The environment provided by us is student friendly.</li>
-                      <li><i class="ri-check-double-line"></i> We teach student with real life example so that they can solve real life problem.</li>
-                      <li><i class="ri-check-double-line"></i> After every topic we give assignment to student so that they can explore more things in the domain.</li>
-                    </ul>
-                    <strong>
-                      So what are you waiting for, You will be the next in the upcomimg poster having a job of your favourite designation. <br>
-                      So if you want to be there join us and make your future secure and more bright.
-                    </strong>
-                  </div>
-                  <div class="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Here is all the placement result of students which they are achieved by their hardwork.</h3>
-                    <p class="fst-italic">
-                    As we know that while studying student needs different environment so that they can focus and study.
-                    </p>
-                    <ul>
-                      <li><i class="ri-check-double-line"></i> The environment provided by us is student friendly.</li>
-                      <li><i class="ri-check-double-line"></i> We teach student with real life example so that they can solve real life problem.</li>
-                      <li><i class="ri-check-double-line"></i> After every topic we give assignment to student so that they can explore more things in the domain.</li>
-                    </ul>
-                    <strong>
-                      So what are you waiting for, You will be the next in the upcomimg poster having a job of your favourite designation. <br>
-                      So if you want to be there join us and make your future secure and more bright.
-                    </strong>
-                  </div>
-                  <div class="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Here is all the placement result of students which they are achieved by their hardwork.</h3>
-                    <p class="fst-italic">
-                    As we know that while studying student needs different environment so that they can focus and study.
-                    </p>
-                    <ul>
-                      <li><i class="ri-check-double-line"></i> The environment provided by us is student friendly.</li>
-                      <li><i class="ri-check-double-line"></i> We teach student with real life example so that they can solve real life problem.</li>
-                      <li><i class="ri-check-double-line"></i> After every topic we give assignment to student so that they can explore more things in the domain.</li>
-                    </ul>
-                    <strong>
-                      So what are you waiting for, You will be the next in the upcomimg poster having a job of your favourite designation. <br>
-                      So if you want to be there join us and make your future secure and more bright.
-                    </strong>
-                  </div>
-                  <div class="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
+<!-- Menu Section -->
+        <section class="section menu" id="menu">
+            <div class="menu-container container">
+                    <div class="meu-text">
+                            <h4 class="section-subtitle"><i>Our Menu</i></h4>
+                            <h2 class="section-title">Our Popular Menu</h2>
+                            <p class="section-description">
+                                Our place designed by pro architecture with psychologist to build best place suit you.  Our place designed by pro architecture with psychologist to build best place suit you.
+                            </p>
+                    </div>
+
+                    <div class="menu-content">
+                            <div class="menu-items">
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                            </div>
+
+                            <div class="time-table">
+                                    <span class="time-topic">Catogries Time</span>
+
+                                    <ul class="time-lists">
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Sunday</span>
+                                                    <span class="open-time">Closed</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Monday</span>
+                                                    <span class="open-time">7.00am - 3.00pm</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Tuesday</span>
+                                                    <span class="open-time">7.00am - 3.00pm</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Wednesday</span>
+                                                    <span class="open-time">7.00am - 3.00pm</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Thursday</span>
+                                                    <span class="open-time">7.00am - 3.00pm</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Friday</span>
+                                                    <span class="open-time">7.00am - 3.00pm</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Saturday</span>
+                                                    <span class="open-time">9.00am - 2.00pm</span>
+                                            </li>
+                                    </ul>
+                            </div>
+                    </div>
             </div>
+        </section>
+
     
-          </div>
-        </section><!-- End Tabs Section -->
-    		
-    		</div>
-    		</div>
-  
-  
-  
-  
-   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Brand Section -->
+        <section class="section brand">
+            <div class="brand-container container">
+                    <h4 class="section-subtitle"><i>Our Trusted Brand</i></h4>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+                    <div class="brand-images">
+                            <div class="brand-image">
+                                    <img src="images/brandImg1.png" alt="" class="brand-img">
+                            </div>
+                            <div class="brand-image">
+                                    <img src="images/brandImg2.png" alt="" class="brand-img">
+                            </div>
+                            <div class="brand-image">
+                                    <img src="images/brandImg3.png" alt="" class="brand-img">
+                            </div>
+                            <div class="brand-image">
+                                    <img src="images/brandImg4.png" alt="" class="brand-img">
+                            </div>
+                            <div class="brand-image">
+                                    <img src="images/brandImg5.png" alt="" class="brand-img">
+                            </div>
+                    </div>
+            </div>
+        </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="assets/js/main.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+<!-- Reviews Section -->
+        <section class="section review" id="review">
+            <div class="review-container container">
+                    <div class="review-text">
+                            <h4 class="section-subtitle"><i>Reviews</i></h4>
+                            <h2 class="section-title">What Clients Says</h2>
+                            <p class="section-description">Some reviews that customer said about coffee services and business Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam totam repellat, labore commodi exercitationem!</p>
+                    </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+                    <div class="tesitmonial swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/profileImg2.jpg" alt="" class="review-img">
+                                            <p class="review-quote">Your coffee hits the spot every time. Thank you for the experience of pure, delicious coffee masterfully roasted! I will never purchase any other and I will spread the word!</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Marnie Rotter</span>
+                                                    <span class="job">App Developer</span>
+                                            </div>
+                                    </div>
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/profileImg1.jpg" alt="" class="review-img">
+                                            <p class="review-quote">Your coffee hits the spot every time. Thank you for the experience of pure, delicious coffee masterfully roasted! I will never purchase any other and I will spread the word!</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Marnie Rotter</span>
+                                                    <span class="job">App Developer</span>
+                                            </div>
+                                    </div>
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/profileImg3.jpg" alt="" class="review-img">
+                                            <p class="review-quote">Your coffee hits the spot every time. Thank you for the experience of pure, delicious coffee masterfully roasted! I will never purchase any other and I will spread the word!</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Marnie Rotter</span>
+                                                    <span class="job">App Developer</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+        </section>
+
+    
+<!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="newletter-container container">
+                <a href="#" class="logo-content flex">
+                        <i class='bx bx-coffee logo-icon'></i>
+                        <span class="logo-text">Coffee.</span>
+                    </a>
+
+                    <p class="section-description">This is the perfect place to find a nice and cozy spot to sip some. You'll find the Java Jungle, Coffee Bean and more shops right in this website.</p>
+
+                    <div class="newsletter-inputBox">
+                            <input type="email" placeholder="emai@example.com" class="newletter-input">
+                            <button class="button newsletter-button">Subscribe</button>
+                    </div>
+
+                    <div class="newsletter media-icons flex">
+                        <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </section>
+        
+    
+<!-- Footer Section -->
+        <footer class="section footer">
+            <div class="footer-container container">
+                    <div class="footer-content">
+                        <a href="#" class="logo-content flex">
+                                <i class='bx bx-coffee logo-icon'></i>
+                                <span class="logo-text">Coffee.</span>
+                            </a>
+
+                            <p class="content-description">Coffee is a cafe that serve many variant of coffee and other dishes with very comfortable place.</p>
+
+                            <div class="footer-location flex">
+                                <i class='bx bx-map map-icon'></i>
+                                
+                                <div class="location-text">
+                                        USA Californa 65 South Fifth St.Sicklerville, NJ 08081
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="footer-linkContent">
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Facility</h4>
+
+                                    <li><a href="#" class="footer-link">Private Room</a></li>
+                                    <li><a href="#" class="footer-link">Meeting Room</a></li>
+                                    <li><a href="#" class="footer-link">Event Room</a></li>
+                                    <li><a href="#" class="footer-link">Creative Studio</a></li>
+                                    <li><a href="#" class="footer-link">Custom Room</a></li>
+                            </ul>
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Facility</h4>
+
+                                    <li><a href="#" class="footer-link">Coffee</a></li>
+                                    <li><a href="#" class="footer-link">Beverages</a></li>
+                                    <li><a href="#" class="footer-link">Dishes</a></li>
+                            </ul>
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Support</h4>
+
+                                    <li><a href="#" class="footer-link">About Us</a></li>
+                                    <li><a href="#" class="footer-link">FAQs</a></li>
+                                    <li><a href="#" class="footer-link">Private Policy</a></li>
+                                    <li><a href="#" class="footer-link">Help Us</a></li>
+                            </ul>
+                    </div>
+            </div>
+            <div class="footer-copyRight">&#169; CodingLab. All rigths reserved</div>
+        </footer>
+
+<!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+                <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
 </html>
