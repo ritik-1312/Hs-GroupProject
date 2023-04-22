@@ -5,14 +5,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 	
-	@RequestMapping ("gallary")
-	String getGallary() {
-		return "gallary";
+	@RequestMapping ("login")
+	String getlogin() {
+		return "Login";
+	}
+
+	@RequestMapping ("signup")
+	String getsignup() {
+		return "Signup";
 	}
 	
-	@RequestMapping ("courses")
-	String getCourses() {
-		return "courses";
-	}
+	
+
 	
 }
