@@ -60,7 +60,7 @@
                         <div class="contact-content flex">
                             <!-- <i class='bx bx-phone phone-icon' ></i>
                             <span class="phone-number">0022-0303-2030</span> -->
-                            <a href="#" class="nav-link">LogIn</a>
+                            <a href="login" class="nav-link">LogIn</a>
                             
                             
                         </div>
@@ -88,7 +88,7 @@
 
                                                         <!-- <button class="button">Explore</button> -->
                                                         <div class="about-buttons flex">
-                                        <button class="button">SignUp</button>
+                                     <a href="signup"   <button  class="button">SignUp</button>></a>
                                         <a href="#" class="about-link flex">
                                                 <span class="white-color">LogIn</span>
                                                <!--  <i class='bx bx-right-arrow-alt about-arrowIcon'></i> -->
