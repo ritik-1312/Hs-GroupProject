@@ -287,7 +287,7 @@ body {
                               Password
                             </label>
                           
-                            <input class="input " inputmode="email" name="username" id="username" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
+                            <input class="input " inputmode="email" name="password" id="username" type="password" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
                           
                             <div class="ce62ea098 js-required c68501b36 c81d67e09" data-dynamic-label-for="username" aria-hidden="true">
                               Password

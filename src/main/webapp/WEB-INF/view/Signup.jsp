@@ -265,7 +265,7 @@ body {
                          Full Name
                         </label>
                       
-                        <input class="input cb739a8a3 ca3e05b53" inputmode="email" name="email" id="email" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
+                        <input class="input cb739a8a3 ca3e05b53" inputmode="text" name="email" id="email" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
                       
                         <div class="ce62ea098 js-required c68501b36 cca697036" data-dynamic-label-for="email" aria-hidden="true">
                         Full Name
@@ -277,7 +277,7 @@ body {
                          Contact NO
                         </label>
                       
-                        <input class="input cb739a8a3 ca3e05b53" inputmode="email" name="email" id="email" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
+                        <input class="input cb739a8a3 ca3e05b53" inputmode="tel" name="email" id="email" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
                       
                         <div class="ce62ea098 js-required c68501b36 cca697036" data-dynamic-label-for="email" aria-hidden="true">
                          Contact No
@@ -301,7 +301,7 @@ body {
                           Password
                         </label>
                       
-                        <input class="input cb739a8a3 ca3e05b53" inputmode="email" name="email" id="email" type="text" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
+                        <input class="input cb739a8a3 ca3e05b53" inputmode="text" name="email" id="email" type="password" value="" required="" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus="">
                       
                         <div class="ce62ea098 js-required c68501b36 cca697036" data-dynamic-label-for="email" aria-hidden="true">
                           Password
