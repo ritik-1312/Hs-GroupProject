@@ -37,11 +37,11 @@
 
                     <div class="menu-content">
                             <ul class="menu-list flex">
-                                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
-                                    <li><a href="#about" class="nav-link">about</a></li>
+                                    <li><a href="index" class="nav-link active-navlink">home</a></li>
+                                    <li><a href="About" class="nav-link">about</a></li>
                                     <li><a href="#menu" class="nav-link">service</a></li>
                                     <li><a href="#review" class="nav-link">review</a></li>
-                                    <li><a href="gallary" class="nav-link">Gallary</a></li>
+                                    <li><a href="gallery" class="nav-link">Gallery</a></li>
                                     <li><a href="courses" class="nav-link">Our Courses</a></li>
                                      <li><a href="#newsletter" class="nav-link">Contact</a></li>
                             </ul>
@@ -60,7 +60,8 @@
                         <div class="contact-content flex">
                             <!-- <i class='bx bx-phone phone-icon' ></i>
                             <span class="phone-number">0022-0303-2030</span> -->
-                            <a href="login" class="nav-link">LogIn</a>
+                            <a href="login" class="nav-link">LogIn |</a>
+                            <a href="signup" class="nav-link">Sign UP</a>
                             
                             
                         </div>
