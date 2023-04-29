@@ -88,8 +88,8 @@
 
                                                         <!-- <button class="button">Explore</button> -->
                                                         <div class="about-buttons flex">
-                                     <a href="signup"   <button  class="button">SignUp</button>></a>
-                                        <a href="#" class="about-link flex">
+                                     <a href="signup"> <button  class="button">SignUp</button></a>
+                                        <a href="login" class="about-link flex">
                                                 <span class="white-color">LogIn</span>
                                                <!--  <i class='bx bx-right-arrow-alt about-arrowIcon'></i> -->
                                             <!--     <box-icon name='right-arrow-alt' color='#ffffff' ></box-icon> -->
@@ -474,7 +474,7 @@
                             </a>
 
                             <p class="content-description">We are team that develope students and create their future bright and fill them with knowledge.</p>
-
+                           
                             <div class="footer-location flex">
                                 <i class='bx bx-map map-icon'></i>
                                 
@@ -482,6 +482,9 @@
                                         Near New Nandanvan Layout Nandanvan, Nagpur, Maharashtra 440024
                                 </div>
                             </div>
+                             
+                            <p class="content-description red-color">Developed By <br>
+                            <a class="white-color" href="">Rajkamal Hatwar</a> & <a class="white-color" href="">Vivek Padole</a></p>
                     </div>
 
                     <div class="footer-linkContent">
