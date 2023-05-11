@@ -37,12 +37,12 @@
 
                     <div class="menu-content">
                             <ul class="menu-list flex">
-                                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
-                                    <li><a href="#about" class="nav-link">about</a></li>
+                                    <li><a href="index" class="nav-link active-navlink">home</a></li>
+                                    <li><a href="About" class="nav-link">about</a></li>
                                     <li><a href="#menu" class="nav-link">service</a></li>
                                     <li><a href="#review" class="nav-link">review</a></li>
-                                    <li><a href="gallary" class="nav-link">Gallary</a></li>
-                                    <li><a href="courses" class="nav-link">Our Courses</a></li>
+                                    <li><a href="gallery" class="nav-link">Gallery</a></li>
+                                   
                                      <li><a href="#newsletter" class="nav-link">Contact</a></li>
                             </ul>
                             
@@ -60,7 +60,8 @@
                         <div class="contact-content flex">
                             <!-- <i class='bx bx-phone phone-icon' ></i>
                             <span class="phone-number">0022-0303-2030</span> -->
-                            <a href="login" class="nav-link">LogIn</a>
+                            <a href="login" class="nav-link">LogIn </a>
+                          
                             
                             
                         </div>
@@ -82,15 +83,17 @@
                                                 <div class="home-details">
                                                         <div class="home-text">
                                                                 
-                                                                <h2 class="homeTitle">HS Group <br> Software Training and Consultancy</h2>
+                                                                <h2 class="homeTitle"> HS Group <br> Software Training and Consultancy</h2>
                                                                 <h4 class="homeSubtitle">We are team that develope students and create their future bright and fill them with knowledge.</h4>
                                                         </div>
 
                                                         <!-- <button class="button">Explore</button> -->
                                                         <div class="about-buttons flex">
+
                                      <a href="signup"> <button  class="button">SignUp</button></a>
                                         <a href="login" class="about-link flex">
                                                 <span class="white-color">LogIn</span>
+
                                                <!--  <i class='bx bx-right-arrow-alt about-arrowIcon'></i> -->
                                             <!--     <box-icon name='right-arrow-alt' color='#ffffff' ></box-icon> -->
                                             <img class="about-arrowIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAALhJREFUSEvt1csNg0AMBFBPJ5RCOkknJJVQSqATOpnI0gYhpAT/hHLAF067bz2yBeTkwsmeXGB54v8dKcmXiMwAHtHWzR02rG/QM4qaQJJ3ERl3XYVQE6gQSY1xyKJmsAp1gRWoG8yiITCDZkBdEd3LbU0Abr92NASSDGH6EDeYwdxgFnOBFZgZrMI8YNcmUr9ah9P4bVLNQ0Pygy5Ho1+2FooCWKL/QnOkGWB/1hxpFXqBVUmu97wBmiRUHX2eY10AAAAASUVORK5CYII="/>
@@ -140,7 +143,7 @@
                 <div class="about-content container">
                         <div class="about-imageContent">
                         
-                                <img src="assets/img/home/about.svg" alt="" class="">
+                                <img src="assets/img/home/undraw_Programming_re_kg9v.png" alt="" class="">
 
                                 <div class="aboutImg-textBox">
                                         <i class='bx bx-heart heart-icon flex'></i>

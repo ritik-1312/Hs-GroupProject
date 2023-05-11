@@ -241,7 +241,7 @@ body {
         <header class="c194aa624 ce8ab6053">
           <div title="OpenAI" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
         
-          <img class="c97c10b1a c14768237" id="prompt-logo-center" src="https://openai.com/content/images/2019/05/openai-avatar.png" alt="OpenAI">
+          <img class="" id="prompt-logo-center" src="https://openai.com/content/images/2019/05/openai-avatar.png" alt="OpenAI">
 
           
             <h1 class="c751d88a6 cefd29ea5">Welcome back</h1>
@@ -250,13 +250,13 @@ body {
       
         </header>
       
-        <div class=" ">
+      <div class="cfa07b89d c0c73c15b"> 
           
         
           
             <div class="cb03e9f8a c97171f85">
               <div class="c21559276">
-                
+                  
               
                 <form method="POST" class="cc8700b1b _form-login-id" data-form-primary="true">
                   <input type="hidden" name="state" value="hKFo2SB4THhIa1VWeFBaRHZWMV83QkNhaWI4WmZkNFZvRlFWMqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE15eWJfbnhtaC1kYlZxdTVXQzN4aXF5VXRWeDZ3Vkdso2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc">
@@ -301,6 +301,8 @@ body {
                       
                     </div>
                   </div>
+                  </div>
+                 
                 
                   <input class="hide" type="password" autocomplete="off" tabindex="-1" aria-hidden="true">
                 
