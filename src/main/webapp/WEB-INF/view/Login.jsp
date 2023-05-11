@@ -241,7 +241,7 @@ body {
         <header class="c194aa624 ce8ab6053">
           <div title="OpenAI" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
         
-          <img class="c97c10b1a c14768237" id="prompt-logo-center" src="https://openai.com/content/images/2019/05/openai-avatar.png" alt="OpenAI">
+          <img class="" id="prompt-logo-center" src="https://openai.com/content/images/2019/05/openai-avatar.png" alt="OpenAI">
 
           
             <h1 class="c751d88a6 cefd29ea5">Welcome back</h1>

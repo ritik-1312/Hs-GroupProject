@@ -28,6 +28,10 @@ public 	String getlogin() {
 		return "Gallery";
 	}
 	
+	@RequestMapping("dashboard")
+	 public String getdashboard(){
+		return "Dashboard";
+	}
 
 	
 }
