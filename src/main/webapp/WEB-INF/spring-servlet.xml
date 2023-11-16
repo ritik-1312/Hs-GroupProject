@@ -31,9 +31,42 @@
     
     
     <mvc:resources mapping= "/assets/**" location="assets/"/>
+    
 	
+     <bean id="jdbctemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+     <property name="dataSource" ref="ds"></property>
+  </bean>
+  
+  <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+       <property name="driverClassName" value="com.mysql.jdbc.Driver" ></property>
+       <property name="url" value="jdbc:mysql://localhost:3306/db_spring" ></property>
+       <property name="username" value="root" ></property>
+       <property name="password" value="" ></property>
+  </bean>
+  
+  <bean id="dao" class="com.hs.MainDao">
+     <property name="jdbcTemplate" ref="jdbctemplate"></property>
+  </bean>
 
-
+ <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/> 
+ 
+ 
+ <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">  
+  <property name="host" value="smtp.gmail.com" />  
+    <property name="username" value="--------" />  
+    <property name="password" value="--------" />  
+    <property name="javaMailProperties">  
+       <props>  
+              <prop key="mail.smtp.auth">true</prop>  
+              <prop key="mail.smtp.socketFactory.port">465</prop>  
+              <prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop>  
+              <prop key="mail.smtp.port">465</prop>  
+        </props>  
+    </property>  
+    
+    
+</bean> 
+ 
  
  
 </beans>
